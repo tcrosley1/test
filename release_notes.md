@@ -35,7 +35,7 @@ The following table provides the list of updated applications/projects:
 
 - **New Drivers**
 
-The following table provides the list of new audio drivers (moved from core repo):
+The following table provides the list of new audio drivers:
 
 | Driver | Description | BTADK | BTADK/MZ | C2/MZ | E54 | E70 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -48,7 +48,7 @@ Although the codec drivers were already in the audio repo, their location was ch
 
 - **Updated Drivers**
 
-The following table provides the list of new audio drivers (moved from core repo):
+The following table provides the list of updated audio drivers:
 
 | Driver | Description | BTADK | BTADK/MZ | C2/MZ | E54 | E70 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -70,15 +70,15 @@ The following table provides the list of new audio peripheral libraries:
 
 - **New Audio Application Templates**
 
-The following table provides the list new templates:
+The following table provides the list new audio templates:
 
 | Template | Description | BTADK | BTADK/MZ | C2/MZ |
 | --- | --- | --- | --- | --- | 
 | ak4954 | AK4954 Codec with BTADK (MX) | x | | |
-| ak4954 | AK4954 Codec with BTADK (MZ {PIM) | | x | |
+| ak4954 | AK4954 Codec with BTADK (MZ/PIM) | | x | |
 | ak4954 | AK4954 Codec with Curiosity MZ 2.0  | | | x |
 | generic | Generic Codec with BTADK (MX) | x | | |
-| generic | Generic Codec with BTADK (MZ {PIM)| | x | |
+| generic | Generic Codec with BTADK (MZ/PIM)| | x | |
 | generic | Generic Codec with Curiosity MZ 2.0  | | | x |
 
 ### TESTED WITH:
@@ -93,17 +93,17 @@ Before using MPLAB Harmony Audio, ensure that the following are installed:
 
 In order to regenerate source code for any of the applications, you will also need the following to be installed:
 
-| Tool | Version |
-| --- | --- |
-| [MPLAB® Harmony Configurator (MHC)](https://github.com/Microchip-MPLAB-Harmony/mhc) | v3.3.0 |
-| MPLAB® Harmony Configurator (MHC) plug-in   | v3.3.0.1 |
-| [Harmony 3 BSP](https://github.com/Microchip-MPLAB-Harmony/bsp)   | v3.4.0 |
-| [Harmony 3 CSP](https://github.com/Microchip-MPLAB-Harmony/csp)  | v3.4.0 |
-| [Harmony 3 Core](https://github.com/Microchip-MPLAB-Harmony/core)  | v3.4.0 |
-| [Harmony 3 Graphics ](https://github.com/Microchip-MPLAB-Harmony/gfx)   | v3.4.0 |
-| [Harmony 3 Dev_Packs](https://github.com/Microchip-MPLAB-Harmony/dev_packs)   | v3.4.0 |
-| [Harmony 3 USB](https://github.com/Microchip-MPLAB-Harmony/usb)   | v3.3.0 |
-| [Harmony 3 CMSIS-FreeRTOS](https://github.com/ARM-software/CMSIS-FreeRTOS)   | v10.2.0 |
+| Tool | Version | Notes |
+| --- | --- | --- |
+| [MPLAB® Harmony Configurator (MHC)](https://github.com/Microchip-MPLAB-Harmony/mhc)| v3.3.0 |
+| MPLAB® Harmony Configurator (MHC) plug-in | v3.3.0.1 | |
+| [Harmony 3 BSP](https://github.com/Microchip-MPLAB-Harmony/bsp)| v3.4.0 | |
+| [Harmony 3 CSP](https://github.com/Microchip-MPLAB-Harmony/csp)| v3.4.0 | |
+| [Harmony 3 Core](https://github.com/Microchip-MPLAB-Harmony/core)| v3.4.0 | |
+| [Harmony 3 Graphics ](https://github.com/Microchip-MPLAB-Harmony/gfx)| v3.4.0 | only if using graphics |
+| [Harmony 3 Dev_Packs](https://github.com/Microchip-MPLAB-Harmony/dev_packs)| v3.4.0 | |
+| [Harmony 3 USB](https://github.com/Microchip-MPLAB-Harmony/usb)| v3.3.0 |only if using USB|
+| [Harmony 3 CMSIS-FreeRTOS](https://github.com/ARM-software/CMSIS-FreeRTOS)| v10.2.0 | only if using FreeRTOS |
 
 #### Development Kit Support
 
@@ -161,9 +161,9 @@ This table lists the contents of this release, including a brief description, an
 
 | Folder | Description | Release Type |
 | --- | --- | --- |
-| audio\apps\audio_enc | audio encoder application | Beta |
+| audio\apps\audio_enc | audio encoder application | Production |
 | audio\apps\audio_player_basic | audio_player_basic application | Production |
-| audio\apps\audio_signal_generator | audio signal generator application | Beta |
+| audio\apps\audio_signal_generator | audio signal generator application | Production |
 | audio\apps\audio_tone  | audio tone application | Production |
 | audio\apps\audio_tone_linkeddma | audio tone using linked dma application | Production |
 | audio\apps\microphone_loopback | microphone loopback application | Production |
