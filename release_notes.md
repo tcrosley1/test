@@ -23,6 +23,7 @@ where:
 |**C2/MZ**| [Curiosity PIC32MZEF Dev Board 2.0](https://www.microchip.com/developmenttools/ProductDetails/PartNO/DM320209) |
 |**E54**| [SAM E54 Curiosity Ultra Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/PartNO/DM320210) |
 |**E70**| [SAM E70 Xplained Ultra Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/PartNO/DM320113) |
+|**V71**| [SAM V71 Xplained Ultra Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/PartNO/ATSAMV71-XULT) |
 
 - **Updated Applications/Projects**
 
@@ -37,9 +38,9 @@ The following table provides the list of updated applications/projects:
 
 The following table provides the list of new audio drivers:
 
-| Driver | Description | BTADK | BTADK/MZ | C2/MZ | E54 | E70 |
+| Driver | Description | BTADK | BTADK/MZ | C2/MZ | E54 | E70 | V71 |
 | --- | --- | --- | --- | --- | --- | --- |
-| I2S | I2S Driver | x | x | x | x | x |
+| I2S | I2S Driver | x | x | x | x | x | x |
 
 
 **NOTE:** The I2S driver listed above was previously in the core repo, and is now located in the audio repo instead.  All of the audio projects have been updated to use the new location.  Howevever if someone has copied an application from a previous version (e.g. 3.3) of the audio repo, it will need to be updated to reflect this change. After noting any special settings in the MHC dialog for the driver, the I2S driver should be removed from the project graph, and the same one selected again from the audio repo instead, and the appropriate connections restored.
@@ -50,21 +51,21 @@ Although the codec drivers were already in the audio repo, their location was ch
 
 The following table provides the list of updated audio drivers:
 
-| Driver | Description | BTADK | BTADK/MZ | C2/MZ | E54 | E70 |
-| --- | --- | --- | --- | --- | --- | --- |
-| I2S | Added audio data definitions | x | x | x | x | x |
-| WM8904 | Added MIC port selection to WM8904 codec driver | | | | x | x |
+| Driver | Description | BTADK | BTADK/MZ | C2/MZ | E54 | E70 | V71 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| I2S | Added audio data definitions | x | x | x | x | x | x |
+| WM8904 | Added MIC port selection to WM8904 codec driver | | | | x | x | x |
 
 - **New Peripheral Libraries (PLIBs)**
 
 The following table provides the list of new audio peripheral libraries:
 
-| Driver | Description | BTADK | BTADK/MZ | C2/MZ | E54 | E70 |
-| --- | --- | --- | --- | --- | --- | --- |
-| i2s_u2224 | I2S Peripheral Library | | | | x | |
-| i2sc_11241 | I2SC Peripheral Library | | | | | x |
-| spi_01329 | I2S Peripheral Library | x | x | x | | |
-| ssc_6078 |  SSC Peripheral Library | | | | | x |
+| Driver | Description | BTADK | BTADK/MZ | C2/MZ | E54 | E70 | V71 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| i2s_u2224 | I2S Peripheral Library | | | | x | | |
+| i2sc_11241 | I2SC Peripheral Library | | | | | x | x |
+| spi_01329 | I2S Peripheral Library | x | x | x | | | |
+| ssc_6078 |  SSC Peripheral Library | | | | | x | x |
 
 **NOTE:** The audio I2S-related peripheral libraries listed above were previously in the csp repo, and are now located in the audio repo instead.  All of the audio projects have been updated to use the new location.  Howevever if someone has copied an application from a previous version (e.g. 3.3) of the audio repo, it will need to be updated to reflect this change. After noting any special settings in the MHC dialog for the peripheral, any I2S-related PLIB should be removed from the project graph, and the same one selected again from the audio repo instead, and the appropriate connections restored..
 
