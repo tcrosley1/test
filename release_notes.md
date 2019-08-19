@@ -15,6 +15,15 @@ The following table provides the list of new applications/projects:
 | usb_speaker | added I2SC variation | | | | | x |
 | usb_speaker_hi_res | new application | | | | | x |
 
+where:
+
+| --- | --- | 
+|**BTADK**| [PIC32 Bluetooth Audio Development Kit](https://www.microchip.com/developmenttools/ProductDetails/PartNO/DV320032) |
+|**BTADK/MZ**| [BTADK with PIC32MZ EF Audio 144-pin PIM](https://www.microchip.com/developmenttools/ProductDetails/PartNO/MA320018)
+|**C2/MZ**| [Curiosity PIC32MZEF Dev Board 2.0](https://www.microchip.com/developmenttools/ProductDetails/PartNO/DM320209) |
+|**E54**| [SAM E54 Curiosity Ultra Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/PartNO/DM320210) |
+|**E70**| [SAM E70 Xplained Ultra Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/PartNO/DM320113) |
+
 - **Updated Applications/Projects**
 
 The following table provides the list of updated applications/projects:
