@@ -8,10 +8,9 @@ The following table provides the list of new applications/projects:
 
 | Application | Description | BTADK | BTADK/MZ | C2/MZ | E54 | E70 |
 | --- | --- | --- | --- | --- | --- | --- |
-| audio_player_basic | added ADPCM decoder | | | | x | x |
 | audio_tone | added BTADK and C2 variations using AK4954 | x | x | x | | |
 | microphone_loopback | added BTADK variation using AK4954 | | x | | | |
-| usb_microphone | new app, bare-metal and FreeRTOS versions | | | | | x |
+| usb_microphone | new application, bare-metal and FreeRTOS versions | | | | | x |
 | usb_speaker | added I2SC variation | | | | | x |
 | usb_speaker_hi_res | new application | | | | | x |
 
@@ -30,6 +29,7 @@ The following table provides the list of updated applications/projects:
 
 | Application | Description | E70 |
 | --- | --- | --- |
+| audio_player_basic | added ADPCM decoder | x |
 | usb_speaker | Fixed buffer overflow/underrun problem | x |
 
 - **New Drivers**
