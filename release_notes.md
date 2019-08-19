@@ -16,6 +16,7 @@ The following table provides the list of new applications/projects:
 
 where:
 
+| |  Development Kit |
 | --- | --- | 
 |**BTADK**| [PIC32 Bluetooth Audio Development Kit](https://www.microchip.com/developmenttools/ProductDetails/PartNO/DV320032) |
 |**BTADK/MZ**| [BTADK with PIC32MZ EF Audio 144-pin PIM](https://www.microchip.com/developmenttools/ProductDetails/PartNO/MA320018)
@@ -28,7 +29,7 @@ where:
 The following table provides the list of updated applications/projects:
 
 | Application | Description | E54 | E70 |
-| --- | --- | --- |
+| --- | --- | --- |--- |
 | audio_player_basic | added ADPCM decoder | x | x |
 | usb_speaker | Fixed buffer overflow/underrun problem || x |
 
