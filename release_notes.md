@@ -39,7 +39,7 @@ The following table provides the list of updated applications/projects:
 The following table provides the list of new audio drivers:
 
 | Driver | Description | BTADK | BTADK/MZ | C2/MZ | E54 | E70 | V71 |
-| --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 | I2S | I2S Driver | x | x | x | x | x | x |
 
 
@@ -170,14 +170,14 @@ This table lists the contents of this release, including a brief description, an
 | audio\apps\microphone_loopback | microphone loopback application | Production |
 | audio\apps\usb_speaker | USB speaker application | Production |
 | audio\apps\usb_speaker_hi_res | USB speaker application (hi-res) | Beta |
-| audio\driver\i2s | I2S Driver | Beta |
+| audio\driver\i2s | I2S Driver | Production |
 | audio\driver\codec\AK4954 | AK4954 Codec Driver | Beta |
 | audio\driver\codec\Generic | Generic Codec Driver | Beta |
 | audio\driver\codec\WM8904 | WM8904 Codec Driver | Production |
-| audio\peripheral\i2s_u2224 | I2S Peripheral Library (E54) | Beta |
-| audio\peripheral\i2sc_11241 | I2SC Peripheral Library (E70) | Beta |
+| audio\peripheral\i2s_u2224 | I2S Peripheral Library (E54) | Production |
+| audio\peripheral\i2sc_11241 | I2SC Peripheral Library (E70) | Production |
 | audio\peripheral\spi_01329 | I2S Peripheral Library (MX/MZ)| Beta |
-| audio\peripheral\ssc_6078 | SSC Peripheral Library (E70/V71) | Beta |
+| audio\peripheral\ssc_6078 | SSC Peripheral Library (E70/V71) | Production |
 | audio\templates\ak4954 | Audio application template | Beta |
 | audio\templates\generic | Audio application template | Beta |
 | audio\templates\wm8904 | Audio application template | Production |
