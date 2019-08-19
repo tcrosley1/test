@@ -8,11 +8,11 @@ The following table provides the list of new applications/projects:
 
 | Application | Description | BTADK | BTADK/MZ | C2/MZ | E70 |
 | --- | --- | --- | --- | --- | --- |
-| audio_tone | added BTADK and C2 variations using AK4954 | x | x | x | |
-| microphone_loopback | added BTADK variation using AK4954 | | x | | |
-| usb_microphone | new application, bare-metal and FreeRTOS versions | | | | x |
-| usb_speaker | added I2SC variation | | | | x |
-| usb_speaker_hi_res | new application | | | | x |
+| audio_tone | Added BTADK and C2 variations using AK4954 | x | x | x | |
+| microphone_loopback | Added BTADK variation using AK4954 | | x | | |
+| usb_microphone | New application, bare-metal and FreeRTOS versions | | | | x |
+| usb_speaker | Added I2SC variation | | | | x |
+| usb_speaker_hi_res | New application; plays 96K audio from a USB host such as a PC | | | | x |
 
 where:
 
@@ -30,7 +30,7 @@ The following table provides the list of updated applications/projects:
 
 | Application | Description | E54 | E70 |
 | --- | --- | --- |--- |
-| audio_player_basic | added ADPCM decoder | x | x |
+| audio_player_basic | Added ADPCM decoder | x | x |
 | usb_speaker | Fixed buffer overflow/underrun problem || x |
 
 - **New Drivers**
@@ -194,12 +194,12 @@ The following table provides the list of new applications/projects:
 
 | Application | Description | E54 | E70 |
 | --- | --- | --- | --- |
-| audio_player_basic | added project using WM8904 and SD card instead of USB, including FreeRTOS version | x | |
-| audio_player_basic | added graphics and FreeRTOS projects using WM8904| | x |
-| audio_tone | added bare metal and FreeRTOS projects using WM8904 | x | |
-| audio_tone | added project using AK4954 | | x |
-| microphone_loopback | added bare metal and FreeRTOS projects using WM8904 | x | |
-| usb_speaker | added FreeRTOS project | | x |
+| audio_player_basic | Added project using WM8904 and SD card instead of USB, including FreeRTOS version | x | |
+| audio_player_basic | Added graphics and FreeRTOS projects using WM8904| | x |
+| audio_tone | Added bare metal and FreeRTOS projects using WM8904 | x | |
+| audio_tone | Added project using AK4954 | | x |
+| microphone_loopback | Added bare metal and FreeRTOS projects using WM8904 | x | |
+| usb_speaker | Added FreeRTOS project | | x |
 
 - **Updated Applications/Projects**
 
@@ -207,7 +207,7 @@ The following table provides the list of updated applications/projects:
 
 | Application | Description | E54 | E70 |
 | --- | --- | --- | --- |
-| audio_player_basic | all projects now use WAV library instead of inline decoding; fixed issue in WAV decoder where inSize argument was ignored and substituted with a fixed length | | x |
+| audio_player_basic | All projects now use WAV library instead of inline decoding; fixed issue in WAV decoder where inSize argument was ignored and substituted with a fixed length | | x |
 
 - **New Drivers**
 
@@ -240,9 +240,9 @@ The following table provides the list of new applications/projects for the SAM E
 
 | Application | Description |
 | --- | --- |
-| audio_enc |  records and encodes PCM audio with optional playback, including a FreeRTOS project |
-| audio_signal_generator | generates audio sine, square, sawtooth and triangle waves using SSC with graphics display |
-| usb_speaker | plays audio from a USB host such as a PC |
+| audio_enc |  Records and encodes PCM audio with optional playback, including a FreeRTOS project |
+| audio_signal_generator | Generates audio sine, square, sawtooth and triangle waves using SSC with graphics display |
+| usb_speaker | Plays audio from a USB host such as a PC |
 
 - **Updated Drivers**
 
@@ -258,8 +258,8 @@ The following table provides the list of updated applications for the SAM E70:
 
 | Application | Description |
 | --- | --- |
-| audio_player_basic | fixed a bug that caused slow playback of 96K sample rate WAVE files |
-| microphone_loopback | added graphics and FreeRTOS projects |
+| audio_player_basic | Fixed a bug that caused slow playback of 96K sample rate WAVE files |
+| microphone_loopback | Added graphics and FreeRTOS projects |
 
 ## Audio Release v3.1.0 (January, 2019)
 ### ADDITIONS FOR 3.1.0:
@@ -286,17 +286,17 @@ The following table provides the list of new applications for the SAM E70:
 
 | Application | Description |
 | --- | --- |
-| audio_player_basic | plays PCM wave files from USB dongle using SSC|
-| audio_tone |  sine wave audio tone generator using I2SC or SSC, including a FreeRTOS project|
-| audio_tone_linkeddma | sine wave audio tone generator using linked DMA and I2SC or SSC |
-| microphone_loopback | outputs audio from microphone after optional delay using I2SC |
+| audio_player_basic | Plays PCM wave files from USB dongle using SSC|
+| audio_tone |  Sine wave audio tone generator using I2SC or SSC, including a FreeRTOS project|
+| audio_tone_linkeddma | Sine wave audio tone generator using linked DMA and I2SC or SSC |
+| microphone_loopback | Outputs audio from microphone after optional delay using I2SC |
 
 The following table provides the list of new applications for the SAM V71:
 
 | Application | Description |
 | --- | --- |
-| audio_tone |  sine wave audio tone generator using SSC |
-| microphone_loopback | outputs audio from microphone after optional delay using SSC |
+| audio_tone |  Sine wave audio tone generator using SSC |
+| microphone_loopback | Outputs audio from microphone after optional delay using SSC |
 
 
 
