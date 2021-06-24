@@ -11,7 +11,7 @@ The following table provides the list of updated Bluetooth drivers:
 
 | Driver | Description | BTADK | MZ/C2 | D21 | E54 CULT | E54 XPRO | E70 
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| BM64 | Fix for new compiler switches and XC32 3.0 compiler | x | x | x | | | x |
+| BM64 | Fix for new compiler switches and XC32 3.0 compiler | x | x |  | x | | x |
 | BM71 | Fix for new compiler switches and XC32 3.0 compiler  | | x | x | x | x | |
 
 ## Bluetooth Release v3.4.0 (October, 2019)
