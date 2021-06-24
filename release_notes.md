@@ -1,7 +1,21 @@
 # Microchip MPLAB Harmony 3 Release Notes
-## Bluetooth Release v3.4.0 (October, 2019)
+## Bluetooth Release v3.4.1 (June, 2021)
 
-### ADDITIONS AND UPDATES FOR 3.4.0:
+### UPDATES FOR 3.4.1:
+
+Note: this is an interim release only to allow other applications to build correctly with the latest Harmony repos and compilers.  No applications have been updated.  They will be moved to a separate bt_apps repo in an upcoming 3.5 release.
+
+- **Updated Drivers**
+
+The following table provides the list of updated Bluetooth drivers:
+
+| Driver | Description | BTADK | MZ/C2 | D21 | E54 CULT | E54 XPRO | E70 
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| BM64 | Fix for new compiler switches and XC32 3.0 compiler | x | x | x | | | x |
+| BM71 | Fix for new compiler switches and XC32 3.0 compiler  | | x | x | x | x | |
+
+## Bluetooth Release v3.4.0 (October, 2019)
+### Additions and Updates for 3.4.0:
 
 - **New Applications/Projects**
 
@@ -29,7 +43,7 @@ where:
 
 - **New Drivers**
 
-The following table provides the list of new Bluetooth drivers for the SAM E70:
+The following table provides the list of new Bluetooth drivers:
 
 | Driver | Description | BTADK | MZ/C2 | D21 | E54 CULT | E54 XPRO | E70 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
