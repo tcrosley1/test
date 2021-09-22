@@ -30,6 +30,7 @@ The following figure illustrates the application architecture for the two SAM E5
 
    <div style="text-align:center">
 ![](graphics/audio_tone_block_diagram4.jpg)
+![](graphics/important.jpg)
    </div>
 
 The I2S (Inter-IC Sound Controller) is used with the WM8904 codec. The WM8904 is configured in master mode, meaning it generates the I<sup>2</sup>S clocks (LRCLK and BCLK), and the I2S peripheral is configured as a slave.
