@@ -51,7 +51,9 @@ The two non-RTOS versions of the program take up to approximately 1% (18 KB) of 
 The following figure illustrates the application architecture for the three SAM E70 Xplained Ultra configurations using the WM8904 (RTOS not shown). The AK4954 version is the same with the substitution of the AK4954 Driver and Codec blocks.
 
    <div style="text-align:center">
+
 ![](graphics/audio_tone_block_diagram5.jpg)
+
    </div>
 
 The AK4954 codec is only used with the SSC (Synchronous Serial Controller). The WM8904 is configured in slave mode and the SSC peripheral is a master and generates the I2SC clocks.
@@ -123,7 +125,9 @@ In the MHC, under Available Components select the PIC32 MZ EF Curiosity 2.0\. Un
 You should end up with a project graph that looks like this, after rearranging the boxes:
 
    <div style="text-align:center">
+
 ![](graphics/audio_tone_project_graph2.jpg)
+
    </div>
 
 The diagram above is for the PIC32 MZ EF PIM and BTADK; the one for the PIC32 MZ EF Curiosity 2.0 is almost the same except it uses I2S2 instead of I2S1\. Click on the I2S Peripheral. In the Configurations Options, under 32/16-Bit Communication
@@ -131,7 +135,9 @@ The diagram above is for the PIC32 MZ EF PIM and BTADK; the one for the PIC32 MZ
 Select bits, select (AUDEN=1) 24-bit data, 32-bit FIFO, 32-bit Channel/64-bit Frame. Change Master Clock Enable bit to REFCLK. Set the Frame Select Pin to C2 for the Curiosity 2.0 board. The configuration should look like this (i2S1/BTADK version shown):
 
    <div style="text-align:center">
+
 ![](graphics/audio_tone_i2s_config2.jpg)
+
    </div>
 
 The Curiosity 2.0 looks the same except for the Frame Select Pin being C2.
@@ -145,7 +151,9 @@ Under Tools, click on Clock Configuration. In the Clock Diagram:
 You should end up with a clock diagram like this:
 
    <div style="text-align:center">
+
 ![](graphics/audio_tone_clock2.jpg)
+
    </div>
 
 For projects using the E54, the I2S interface and the WM8904 as a Master (the WM8904 codec generates the I<sup>2</sup>S clocks):
@@ -157,7 +165,9 @@ In the MHC, under Available Components select the BSP SAM E54 Curiosity Ultra. U
 You should end up with a project graph that looks like this, after rearranging the boxes:
 
    <div style="text-align:center">
+
 ![](graphics/audio_tone_project_graph3.jpg)
+
    </div>
 
 Click on the WM8904 Driver. In the Configurations Options, under Audio Data Format, change it to 32-bit I2S. Set the desired Sample Rate if different from the default (48,000) under Sampling Rate.
@@ -173,7 +183,9 @@ In the Clock Diagram:
 You should end up with a clock diagram like this:
 
    <div style="text-align:center">
+
 ![](graphics/audio_tone_clocks3.jpg)
+
    </div>
 
 For projects using the E70, the SSC interface and the AK4954 as a Slave (the SAM E70 generates the I<sup>2</sup>S clocks):
@@ -187,7 +199,9 @@ AK4954 Codec. Answer Yes to all questions. Click on the AK4954 Codec component (
 You should end up with a project graph that looks like this, after rearranging the boxes:
 
    <div style="text-align:center">
+
 ![](graphics/audio_tone_project_graph5.jpg)
+
    </div>
 
 Click on the AK4954 Driver. In the Configurations Options, under Usage Mode, change Master to Slave. Set the desired Sample Rate if different from the default (48,000) under Sampling Rate.
@@ -195,19 +209,25 @@ Click on the AK4954 Driver. In the Configurations Options, under Usage Mode, cha
 In the Clock Diagram, set MOSCEL to Main Crystal, check the Bypass checkbox, and uncheck the RC Crystal Oscillator and Main Crystal Oscillator boxes, to make use of the 12 MHz external oscillator:
 
    <div style="text-align:center">
-   ![](graphics/audio_tone_crystal.jpg)
+
+![](graphics/audio_tone_crystal.jpg)
+
    </div>
 
 Still in the Clock Diagram, enable the PLLA Clock. Leave the divider at 1 (12 MHz) and change the multiplier to 41 for an output of 492 MHz.
 
    <div style="text-align:center">
-   ![](graphics/audio_tone_plla.jpg)
+
+![](graphics/audio_tone_plla.jpg)
+
    </div>
 
 In the Master Clock Controller, select the source (CSS) as PLLACK (492 MHz), all all three dividers as divide by 2 to generate a Processor Clock of 246 MHz and a Master Clock of 123 MHz. In the Programmable Clock Controller section, select the PCK2 tab, select the source (CSS) as PLLACK (492 MHz), the divider of 40 for a PCK2 output of 12,300,000 Hz.
 
    <div style="text-align:center">
-   ![](graphics/audio_tone_pck2.jpg)
+
+![](graphics/audio_tone_pck2.jpg)
+
    </div>
 
 Then check the SSC checkbox in the **Peripheral Clock Controller** section.
@@ -221,7 +241,9 @@ In the MHC, under Available Components select the appropriate BSP (SAM E70 Xplai
 You should end up with a project graph that looks like this, after rearranging the boxes, assuming a non-FreeRTOS project:
 
    <div style="text-align:center">
-   ![](graphics/audio_tone_project_graph6.jpg)
+
+![](graphics/audio_tone_project_graph6.jpg)
+
    </div>
 
 Click on the WM8904 Driver. In the Configurations Options, set the desired Sample Rate if different from the default (48,000) under Sampling Rate.
@@ -229,7 +251,9 @@ Click on the WM8904 Driver. In the Configurations Options, set the desired Sampl
 If using the SAM E70 Xplained Ultra board, in the Clock Diagram, set MOSCEL to Main Crystal, check the Bypass checkbox, and uncheck the RC Crystal Oscillator and Main Crystal Oscillator boxes, to make use of the 12 MHz external oscillator:
 
    <div style="text-align:center">
-   ![](graphics/audio_tone_crystal2.jpg)
+
+![](graphics/audio_tone_crystal2.jpg)
+
    </div>
 
 If using the ATSAMV71Q21B, in the Clock Diagram set MOSCEL to Main Crystal, uncheck the Bypass checkbox and RC Crystal Oscillator checkbox, and check the Main Crystal Oscillator box.
@@ -251,7 +275,9 @@ WM8904 Codec. Answer Yes to all questions. Click on the WM8904 Codec component (
 You should end up with a project graph that looks like this, after rearranging the boxes:
 
    <div style="text-align:center">
+
 ![](graphics/audio_tone_project_graph7.jpg)
+
    </div>
 
 Click on the WM8904 Driver. In the Configurations Options, under Usage Mode, change Master to Slave. Set the desired Sample Rate if different from the default (48,000) under Sampling Rate.
@@ -259,7 +285,9 @@ Click on the WM8904 Driver. In the Configurations Options, under Usage Mode, cha
 If using the SAM E70 Xplained Ultra board, in the Clock Diagram, set MOSCEL to Main Crystal, check the Bypass checkbox, and uncheck the RC Crystal Oscillator and Main Crystal Oscillator boxes, to make use of the 12 MHz external oscillator:
 
    <div style="text-align:center">
+
 ![](graphics/audio_tone_crystal3.jpg)
+
    </div>
 
 Also in the Clock Diagram, in the PCK2 tab of the **Programmable Clock Controller** section, check the On checkbox, and set CSS to MAINCLK (12 MHz).
@@ -267,7 +295,9 @@ Also in the Clock Diagram, in the PCK2 tab of the **Programmable Clock Controlle
 The following tables show suggested settings for various sample rates in the Clock Diagram when using the I2SC Peripheral in Master mode. Make sure **PLLA Clock** checkbox is checked, and fill in the values for the PLLA Multiplier and Divider boxes. Select the I2S1 tab under **Generic Clock Controller**, set GCLKCSS to PLLACK, fill in the Divider value as shown, and check the checkbox next to it.
 
    <div style="text-align:center">
+
 ![](graphics/audio_tone_plla2.jpg)
+
    </div>
 
 The values in the first table give the lowest error rate, but have varying PLLACK values so it is best to use the UPPCLKDIV selection for CSS under **Master Clock Controller**, for a Processor Clock of 240 MHz.
@@ -330,13 +360,17 @@ Using the PIC32 MZ EF Curiosity 2.0 board and the AK4954 Audio Codec Daughter Bo
 Using the SAM E54 Curiosity Ultra board and the WM8904 Audio Codec Daughter Board, and I2S PLIB. All jumpers on the WM8904 should be toward the **front:**
 
    <div style="text-align:center">
+
 ![](graphics/audio_tone_wm8904_jumpers.jpg)
+
    </div>
 
 In addition, make sure the J401 jumper (CLK SELECT) is set for the PA17 pin:
 
    <div style="text-align:center">
+
 ![](graphics/audio_tone_clk_select.jpg)
+
    </div>
 
 ![](graphics/note.jpg) **Note:** The SAM E54 Curiosity Ultra board does not include the WM8904 Audio Codec daughterboard, which is sold separately on microchipDIRECT as part number AC328904.
@@ -348,7 +382,9 @@ Using the SAM E70 Xplained Ultra board and the AK4954 Audio Codec Daughter Board
 Using the SAM E70 Xplained Ultra board and the WM8904 Audio Codec Daughter Board, and SSC PLIB. All jumpers on the WM8904 should be toward the **front:**
 
    <div style="text-align:center">
+
 ![](graphics/audio_tone_wm8904_jumpers.jpg)
+
    </div>
 
 ![](graphics/note.jpg) **Note:** The SAM E70 Xplained Ultra board does not include the WM8904 Audio Codec daughterboard, which is sold separately on microchipDIRECT as part number AC328904.
@@ -356,7 +392,9 @@ Using the SAM E70 Xplained Ultra board and the WM8904 Audio Codec Daughter Board
 Using the SAM E70 Xplained Ultra board and the WM8904 Audio Codec Daughter Board, and I2SC PLIB. All jumpers on the WM8904 should be toward the **back:**
 
    <div style="text-align:center">
+
 ![](graphics/audio_tone_wm8904_jumpers_back.jpg)
+
    </div>
 
 ![](graphics/note.jpg) **Note:** The SAM E70 Xplained Ultra board does not include the WM8904 Audio Codec daughterboard, which is sold separately on microchipDIRECT as part number AC328904.
@@ -384,13 +422,17 @@ Compile the program using MPLAB X, and program the target device using the EDBG 
 5.  Pressing the pushbutton longer than one second again will switch back to volume-setting mode again (LED off).
 
    <div style="text-align:center">
+
 ![](graphics/audio_tone_btadk_setup.jpg)
+
    </div>
 
 #### Figure 1: AK4954 Audio Codec Daughter Board on PIC32 MZ EF Curiosity 2.0 Board
 
    <div style="text-align:center">
+
 ![](graphics/audio_tone_e70_setup.jpg)
+
    </div>
 
 #### Figure 2: WM8904 Audio Codec Daughter Board on SAM E70 Xplained Ultra board
