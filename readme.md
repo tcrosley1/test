@@ -29,7 +29,7 @@ The non-RTOS version of the program takes up to approximately 3% (28 KB) of the 
 The following figure illustrates the application architecture for the two SAM E54 Xplained Ultra configurations (RTOS not shown):
 
    <div style="text-align:center">
-   ![](graphics/audio_tone_block_diagram4.jpg)
+   ![](./graphics/audio_tone_block_diagram4.jpg)
    </div>
 
 The I2S (Inter-IC Sound Controller) is used with the WM8904 codec. The WM8904 is configured in master mode, meaning it generates the I<sup>2</sup>S clocks (LRCLK and BCLK), and the I2S peripheral is configured as a slave.
@@ -49,7 +49,7 @@ The two non-RTOS versions of the program take up to approximately 1% (18 KB) of 
 The following figure illustrates the application architecture for the three SAM E70 Xplained Ultra configurations using the WM8904 (RTOS not shown). The AK4954 version is the same with the substitution of the AK4954 Driver and Codec blocks.
 
    <div style="text-align:center">
-   ![](graphics/audio_tone_block_diagram5.jpg)
+   ![](./graphics/audio_tone_block_diagram5.jpg)
    </div>
 
 The AK4954 codec is only used with the SSC (Synchronous Serial Controller). The WM8904 is configured in slave mode and the SSC peripheral is a master and generates the I2SC clocks.
